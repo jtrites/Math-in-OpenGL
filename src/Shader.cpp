@@ -145,7 +145,7 @@ unsigned int Shader::CompileShader(unsigned int type, const std::string& source)
         /* construct char message[length] array allocated on the stack */
         char* message = (char*)alloca(length * sizeof(char));
 
-        /* glGetShaderInfoLog — Returns the information log for a shader object
+        /* glGetShaderInfoLog â€” Returns the information log for a shader object
             void glGetShaderInfoLog(GLuint shader, GLsizei maxLength, GLsizei *length, GLchar *infoLog); */
         glGetShaderInfoLog(id, length, &length, message);
 
